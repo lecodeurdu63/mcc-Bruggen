@@ -1,0 +1,183 @@
+* {
+    animation-duration: 4s;
+}
+
+.scrollable-text-x {
+    overflow-y: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    
+}
+.scrollable-text-x::-webkit-scrollbar { 
+    display: none;
+}
+
+.small-icon-button {
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    height: 28px;
+    width: 28px;
+    padding: unset;
+    min-width: unset;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-icon-button svg {
+    height: 18px;
+    width: 22px;
+}
+
+.small-icon-button-nocolor {
+    border-radius: 3px;
+    height: 28px;
+    width: 28px;
+    padding: unset;
+    min-width: unset;
+    justify-content: center;
+}
+
+.small-icon-button-nocolor  svg {
+    height: 18px;
+    width: 22px;
+}
+
+.mcc-button-with-png-and-text > img {
+    height: 20px; 
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+paper-button {
+    /* @apply --paper-material-elevation-1; */
+    /* kopie von shadow-elevation-2dp aus polymer */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    text-transform: none;
+}
+
+
+paper-button:hover {
+    /*@apply --paper-material-elevation-3;*/
+    /* kopie von shadow-elevation-6dp aus polymer */
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+
+.mcc-button {
+    min-width: unset;
+
+    color: #000;
+    background-color:  white;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+
+    cursor: pointer;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-family: inherit;
+    font-size: inherit; /* 14 px ist optimal, muss sich aber an das komplette layout des dialogs anpassen */
+
+    /* kopie vom --shadow-transition aus polymer*/
+    transition:  box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.mcc-button:disabled,
+.mcc-button[disabled]  {
+    background-color:  var(--kx-disabled);
+    color: var(--kx-disabled-text);
+    cursor: default;
+}
+
+.mcc-button:hover:not([disabled])  {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.mcc-button-grid-control {
+    height: 28px;
+}
+
+.mcc-button-primary {
+    background-color: #efffcb;;
+}
+
+.mcc-button-success {
+    color: var(--kx-text);
+    background-color: var(--kx-success);
+    border-color: var(--kx-success-hover);
+}
+
+.mcc-button-success:hover:not([disabled]) {
+    color: var(--kx-text);
+    background-color: var(--kx-success-hover);
+    border-color: var(--kx-success);
+}
+
+.mcc-button-normal-size {
+    height: 31px;
+}
+
+.mcc-button:active:not([disabled]) {
+    background-color: var(--kx-light);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.mcc-dialog-alert {
+    border: 2px solid;
+    border-color: #c23434;
+    background-color: #f8e9e9;
+    color: #c23434;
+  }
+  
+  .mcc-dialog-confirmation {
+    border: 2px solid;
+    border-color: #4c6aaf;
+    background-color: #e9eef8;
+    color: #4c6aaf;
+  }
+  
+  .mcc-dialog-success {
+    border: 2px solid;
+    border-color: #28993b;
+    background-color: #e3fae8;
+    color: #c23434;
+  }
+  
+  .mcc-dialog-warning {
+    border: 2px solid;
+    border-color: #a6852d;
+    background-color: #f8f4e9;
+    color: #a6852d;
+  }
+
+.mcc-input:invalid{
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input {
+    font-size: inherit;
+}
+
+/* pimp bootstrap style */
+.form-control[readonly] {
+    background-color: #f5f5f5;
+}

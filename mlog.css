@@ -1,0 +1,474 @@
+:root {
+    --header-height: 50px;
+    --nav-width: 280px;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: normal;
+    flex-wrap:  nowrap;
+    white-space:  nowrap;
+}
+
+body {
+    overflow: hidden;
+    font-size: 14px;
+    color: var(--kx-text);
+}
+
+/*input:-webkit-autofill {
+    background-color: transparent !important;
+}*/
+
+paper-input-container {
+    --paper-input-container-focus-color: #6F8A9D;
+}
+
+paper-input-container t-t {
+    font-weight: normal;
+}
+
+#popuplayer {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.invisible {
+    display: none !important;
+}
+
+.kardex-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: var(--header-height) 10px 1fr;
+    grid-template-columns: var(--nav-width) 1fr;
+    grid-template-areas: "navheader header" "navheader content" "nav content";
+}
+
+header {
+    grid-area: header;
+    font-family: KardexMOT-Light, sans-serif;
+    background-color: var(--kx-bg);
+    color: var(--kx-text-light);
+    display: grid;
+    grid-template-rows: var(--header-height);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header.header-red {
+    background-color: var(--kx-error) !important;
+}
+
+#configRibbonHeader.offline{
+    border-bottom: 5px solid var(--kx-error) !important;
+}
+
+#header-left-column-wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background: var(--kx-bg);
+}
+
+.hamburger {
+    transform: scale(0.7);
+}
+
+.hamburger .hamburger-inner, .hamburger .hamburger-inner:before, .hamburger .hamburger-inner:after {
+    background-color: var(--kx-text-light);
+}
+
+#mcc-header-logo {
+    font-size: 24px;
+    margin-top: -10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mcc-transparent-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#header-middle-column-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: -6px;
+}
+
+#header-right-column-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#alarmbell-wrapper {
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+}
+
+.alarmbadge {
+    position: absolute;
+    display: inline-block;
+    line-height: 0px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-family: Open Sans;
+    background-color: #ffffff;
+    top: -4px;
+    right: -4px;
+    background: var(--kx-error);
+    color: white;
+    font-weight: bolder;
+    min-width: 16px;
+    text-align: center;
+}
+
+#alarmbadge {
+    display: inline-block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#alarmmenu {
+    list-style: none;
+    width: 380px;
+    /*font-family: KardexMOT-Light;*/
+}
+
+#alarmmenuheader {
+    padding: 0 0 10px 10px;
+    border-bottom: 1px solid #5b636c;
+}
+
+#alarmmenu h4 {
+    color: #444444;
+}
+
+#alarmmenu h4 small {
+    color: #999999;
+    font-size: 10px;
+    position: absolute;
+    right: 2px;
+}
+
+#alarmmenulist {
+    display: flex;
+    max-height: 50vh;
+    overflow-y: auto;
+    position: relative;
+    flex-wrap: wrap;
+    list-style: none;
+    border-bottom: 1px solid #5b636c;
+}
+
+#alarmmenulist > div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#alarmmenulist > div > div:nth-child(2) {
+    padding-left: 15px;
+}
+
+#alarmmenulist > div:hover {
+    background: #e9e9e9;
+}
+
+#alarmmenu-show-all {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    margin-bottom: -12px;
+    text-align: center;
+}
+
+#alarmmenu-show-all a {
+    cursor: pointer;
+    color: #337ab7;
+}
+
+#btn-login {
+    cursor: pointer;
+    margin: 0 0 0 40px;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+
+#btn-userinfo {
+    cursor: pointer;
+    margin-left: 20px;
+    text-transform: lowercase;
+}
+
+#btn-userinfo > div {
+    display: flex;
+    align-items: center;
+}
+
+#logonMenu {
+    list-style: none;
+    padding: 12px;
+}
+
+#logonMenu li:nth-child(4) {
+    padding-top: 10px;
+}
+
+#userMenu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#userMenu .logoff:hover {
+    width: 100%;
+    background: #e9e9e9;
+}
+
+#btn-header-search {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+#nav-header {
+    grid-area: navheader;
+    background-color: #21333D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#nav-header img {
+    min-width: 260px;
+}
+
+.mlog-nav {
+    grid-area: nav;
+    font-family: KardexMOT-Light, sans-serif;
+    background: url(/assets/images/M.svg) no-repeat #21333d;
+    background-position: bottom;
+    background-size: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.mlog-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.mlog-nav ul {
+    list-style: none;
+}
+
+.treeview-menu {
+    display: none;
+    overflow: hidden;
+}
+
+.treeview-menu li {
+    padding: 5px 5px 5px 15px;
+    display: block;
+    font-size: 14px;
+}
+
+.sidebar-menu input[type=checkbox]:checked + label + ul {
+    display: inline;
+}
+
+.sidebar-menu label > svg {
+    transition: transform .65s ease;
+}
+
+.sidebar-menu input[type=checkbox]:checked + label > svg {
+    transform: rotate(90deg);
+}
+
+.sidebar-menu li {
+    color: #ffffff;
+}
+
+.sidebar-menu li a i {
+    margin-right: 5px;
+}
+
+.sidebar-menu li a svg {
+    margin-right: 5px;
+}
+
+.sidebar-menu a {
+    color: white;
+}
+
+.sidebar-menu > li > label {
+    height: 36px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-bottom: 4px;
+	    font-weight: 700;
+    font-size: 24px;
+}
+
+.sidebar-menu > li > a {
+    margin-left: 50px;
+    align-items: center;
+    padding-bottom: 4px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sidebar-menu > li > input[type=checkbox] + label {
+    padding-left: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar-menu > li > input[type=checkbox]:checked + label {
+    border-left: 3px solid var(--kx-bg);
+    padding-left: 47px;
+    background: #182A33;
+}
+
+.sidebar-menu > li > input[type=checkbox]:checked + label + ul > li {
+    background: #182A33;
+}
+
+.sidebar-menu li a t-t:hover, .treeview > label:hover {
+    color: #96AEC2;
+}
+
+.treeview-menu > li > label {
+    height: 16px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.sidebar-menu > .treeview {
+    border-bottom: 1px solid #5b636c;
+}
+
+.sidebar-menu > .treeview > label {
+    margin-bottom: 0;
+}
+
+.treeview .fa-caret-right {
+    color: #96AEC2;
+    position: absolute;
+    right: 40px;
+}
+
+.sidebar-menu > li:nth-child(1) {
+    margin-top: 20px;
+    border-top: 1px solid #5b636c;
+}
+content {
+    grid-area: content;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #eee;
+}
+
+.context-menu-selected {
+    padding: 0 4px; 
+}
+
+.context-menu-selected:hover {
+    background: #e9e9e9;
+}
+
+/* fix for bootstrap dialog*/
+.bootstrap-dialog-header {
+    width: 100%;
+}
+
+.bootstrap-dialog.type-primary .modal-header {
+    background-color: var(--kx-info);
+}
+
+.bootstrap-dialog.type-success .modal-header {
+    background-color: var(--kx-success);
+}
+
+.bootstrap-dialog.type-warning .modal-header {
+    background-color: var(--kx-warning);
+}
+
+.bootstrap-dialog.type-danger .modal-header {
+    background-color: var(--kx-error);
+}
+
+.bootstrap-dialog .bootstrap-dialog-title {
+    color: var(--kx-text);
+}
+
+.bootstrap-dialog.type-danger .bootstrap-dialog-title {
+    color: var(--kx-text-light);
+}
+
+.green-test .ag-theme-alpine .ag-row-selected {
+    background-color: rgba(40, 167, 69, 0.3);
+}
+
+.notification-area {
+    pointer-events: none;
+    background: transparent;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.notification-area > div {
+    display: block;
+    z-index: 1;
+    background-color:rgba(217, 237, 247, 0.9);
+    border: 1px solid rgb(188, 232, 241);
+    margin: 4px;
+    padding: 10px;
+    white-space: normal;
+    color: rgb(58, 135, 173);
+    font-weight: 700;
+    border-radius: 5px;
+    pointer-events: auto;
+    transform: scaleY(0);
+    animation: fade 5s;
+    overflow: hidden;
+}
+
+@keyframes fade {
+    0% { transform: scaleY(0); }
+    20% { transform: scaleY(1); }
+    80% { transform: scaleY(1); }
+    100% { transform: scaleY(0); }
+}

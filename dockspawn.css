@@ -1,0 +1,99 @@
+.dockspan-tab-handle-close-button:hover {
+    color: #5b636c !important;
+}
+
+.dockspan-tab-handle {
+	height: 24px;
+}
+
+.dockspan-tab-handle-list-container {
+	height: 24px;
+}
+
+.dockspan-tab-handle-text {
+    margin-top: 1px !important;
+}
+
+.dockspan-tab-handle-selected {
+    background-color: #182A33 !important;
+}
+
+.dockspan-tab-handle:hover {
+    background-color: var(--kx-bg-hover) !important;
+}
+
+.dockspan-tab-handle-content-seperator {
+    background-color: #182A33 !important;
+    height: 1px !important;
+}
+
+.dockspan-tab-host {
+	position: absolute;
+}
+
+.panel-base {
+    z-index: 1;
+}
+
+.panel-titlebar {
+    background-color: #182A33 !important;
+}
+
+.panel-titlebar-text {
+    color: #ffffff !important;
+    font-weight: normal; 
+    padding-top: 0;
+}
+
+.panel-titlebar-button-close {
+    color: #ffffff !important;
+}
+
+.panel-content {
+    /* padding: 5px; */ /* padding hier nicht m�glich sonst funzen visu screens nicht mehr richtig ! */
+    overflow: hidden;
+}
+
+.panel-content > * {
+    position: relative;
+}
+
+.dialog-floating {
+    /* box-shadow:  0px 0px 0px #000 !important;*/
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+                0 9px 46px 8px rgba(0, 0, 0, 0.12),
+                0 11px 15px -7px rgba(0, 0, 0, 0.4);
+}
+
+.resize-handle-corner {
+}
+
+.rounded-corner-top {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.splitbar-horizontal {
+    height: 3px !important;
+    background: darkgray;
+}
+
+.splitbar-vertical {
+    width: 3px !important;
+    background: darkgray;
+}
+
+.dockspan-tab-handle-content-seperator-active {
+	background-color: var(--kx-bg) !important;
+}
+
+.dockspan-tab-handle-active {
+	background-color: var(--kx-bg) !important;
+}
+
+.dockspan-panel-active {
+	background-color: var(--kx-bg) !important;
+}
+.dockspan-panel-titlebar-text-active {
+	color: white;
+}

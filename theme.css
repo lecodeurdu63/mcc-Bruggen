@@ -1,0 +1,67 @@
+:root {
+    /* +++ Kardex Corporate Design +++ */
+    --kx-logo-colors-kardex-blue: #507295;
+    --kx-logo-colors-kardex-green: #5E803D;
+
+    --kx-text-colors-process-black: #2C2A29;
+    --kx-text-colors-white: #FFFFFF;
+
+    --kx-primary-colors-blue-1: #96AEC2;
+    --kx-primary-colors-blue-2: #6F8A9D;
+    --kx-primary-colors-blue-3: #546A7A;
+    --kx-primary-colors-green-1: #A2B9AF;
+    --kx-primary-colors-green-2: #82A094;
+    --kx-primary-colors-green-3: #4F6A64;
+    --kx-primary-colors-grey-1: #AEBFC3;
+    --kx-primary-colors-grey-2: #92A2A5;
+    --kx-primary-colors-grey-3: #5D6E73;
+    --kx-primary-colors-silver-1: #A8ACA9;
+    --kx-primary-colors-silver-2: #979796;
+    --kx-primary-colors-silver-3: #757777;
+    --kx-markup-colors-red-1: #E17F70;
+    --kx-markup-colors-red-2: #9E3B47;
+    --kx-markup-colors-red-3: #75242D;
+    --kx-markup-colors-sand-1: #EEC18F;
+    --kx-markup-colors-sand-2: #CE9F6B;
+    --kx-markup-colors-sand-3: #976E44;
+    /* +++ Kardex Corporate Design +++ */
+
+    --kx-dark: rgb(0, 141, 76);
+    --kx-dark-text: white;
+    --kx-normal: rgb(91, 173, 84);
+    --kx-normal-text: white;
+    --kx-light: #96AEC2;
+    --kx-light-text: white;
+    --kx-medium: #4c4a44;
+    --kx-no: red;
+    --kx-disabled: var(--kx-primary-colors-silver-1);
+    --kx-disabled-text: var(--kx-text-colors-process-black);
+    --kx-back: #dce1e5;
+    --kx-menu-back: var(--kx-back);
+    --kx-menu-btn: var(--kx-dark);
+    --kx-menu-btn-width: 200px;
+    --kx-menu-btn-height: 120px;
+    --kx-menu-btn-border: none;
+    
+    --kx-text: var(--kx-text-colors-process-black);
+    --kx-text-light: #F7F7F7;
+    --kx-text-disabled: #77716E;
+    --kx-bg-white: #F7F7F7;
+    --kx-bg: #546A7A;
+    --kx-bg-hover: #2E3C4A;
+    --kx-bg-disabled: #AAB5BD;
+    --kx-info: #6F8A9D;
+    --kx-info-hover: #5D7689;
+    --kx-info-disabled: #A4B5C1;
+    --kx-success: #A2BC0C;
+    --kx-success-hover: #759703;
+    --kx-success-disabled: #D1DE86;
+    --kx-warning: #FFCC00;
+    --kx-warning-hover: #F7AD00;
+    --kx-warning-disabled: #FFE680;
+    --kx-error: #D2072A;
+    --kx-error-hover: #B6020F;
+    --kx-error-disabled: #FFACAF;
+    
+    --kx-readonly: var(--kx-primary-colors-silver-1);
+}

@@ -1,0 +1,121 @@
+.tab-content {
+
+}
+.tab-pane {
+    padding-top: 20px;
+    border: 1px #ccc solid;
+    border-top: none;
+
+}
+.gridwrapper {
+    height:230px;
+}
+
+#textfilter, .filterinput {
+    padding:5px;
+    margin-bottom: 15px;
+}
+
+.display {
+    height:100%!important;
+    margin-top: 50px;
+
+}
+.displaywrapper {
+    padding: 20px;
+    background-color: #f7f7f7;
+
+}
+
+.form-horizontal .control-label{
+    text-align: left;
+}
+
+.confirmpass {
+    display: none;
+}
+
+.passactive {
+    display: block;
+}
+
+.container-fluid {
+    padding:0!important;
+}
+
+#grid_rules {
+    margin-top: 30px;
+}
+
+#grid_rules .tab-pane {
+    height: 300px;
+    padding:10px;
+}
+
+.centercheckbox {
+    text-align: center;
+}
+
+#mainCont .tab-content {
+
+}
+
+.filter {
+    margin-left: 15px;
+}
+
+.overlayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 244, 244, 0);
+    z-index: 100000;
+    text-align: center;
+}
+
+.messagebox {
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    border: 1px #ccc solid;
+    border-radius: 6px;
+    position: relative;
+    top: 20%;
+    left: -130px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+}
+
+.usrimg {
+    position: absolute;
+    top: 130px;
+    right: 30px;
+}
+
+#usrimg {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-bs-file{
+    position:relative;
+    padding: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px;
+}
+.btn-bs-file input[type="file"]{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+}
+
+.btnwrapper {
+    margin-right: 30px;
+}

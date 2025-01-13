@@ -1,0 +1,7 @@
+import '../../polymer.js';
+import '../../communication/DefaultCommunication.js';
+import '../../commonClient/MccCommonClient.js';
+import './MainHandlerDock.js';
+import './MccDialogDock.js';
+import '../../components.js';
+//# sourceMappingURL=Imports.js.map
